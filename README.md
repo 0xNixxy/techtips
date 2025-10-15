@@ -7,3 +7,21 @@ when faced with similar technical topics.
 I used [Github-flavoured Markdown](https://docs.github.com/en/get-started/writing-on-github)
 to write documents in this repository due to the simplicity to render visual
 guides, such as notes and warnings, without additional deployment overheads.
+
+> [!TIP]
+> Use `Ctrl + F` to quickly jump to a topic or keyword.
+
+---
+
+## Contents
+
+### 🛠️ Windows 11 Maintenance
+
+- [Create local account via PowerShell](windows/local-windows-admin.md)
+
+---
+
+## Licence
+
+This project is licensed under the MIT License. See [Licence](LICENSE.txt) for
+details.
