@@ -18,6 +18,11 @@ guides, such as notes and warnings, without additional deployment overheads.
 ### 🛠️ Windows 11 Maintenance
 
 - [Create local account via PowerShell](windows/local-windows-admin.md)
+- [Update PowerShell](windows/update-powershell.md)
+
+### Terminal Tricks for the Developer
+
+- [Create GUID via PowerShell](windows/create-guid.md)
 
 ---
 
