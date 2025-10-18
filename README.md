@@ -20,9 +20,10 @@ guides, such as notes and warnings, without additional deployment overheads.
 - [Create local account via PowerShell](windows/local-windows-admin.md)
 - [Update PowerShell](windows/update-powershell.md)
 
-### Terminal Tricks for the Developer
+### Tech Tricks for Developers
 
 - [Create GUID via PowerShell](windows/create-guid.md)
+- [Set up WSL on Windows 11](developer/setup-wsl.md)
 
 ---
 
