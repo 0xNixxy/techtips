@@ -1,4 +1,4 @@
-# Set up WSL on Windows 11
+# WSL on Windows 11
 
 Windows Subsystem for Linux (WSL) allows developers to install Linux on Windows
 and allows a side-by-side use of both Windows and Linux terminals. This tech tip
@@ -259,3 +259,8 @@ following command
 wsl.exe --shutdown
 wsl --unregister Ubuntu-24.04
 ```
+
+## Back to Main Page
+
+> [!NOTE]
+> This tech tip is part of [0xNixxy Tech Tips](../README.md) series.

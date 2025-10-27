@@ -1,8 +1,10 @@
 # Welcome to 0xNixxy Tech Tips
 
-This repository contains a personal collection of technical snippets that I
-collected over time to save time. I hope that it will also help you save time
-when faced with similar technical topics.
+Welcome to my personal repository of technical tips, an opinionated collection
+of practical and time-saving solutions that I gathered over time. These notes
+serve as my go-to reference for topics on system maintenance, software
+development and cybersecurity. I hope that others facing similar technical
+topics will find this collection helpful.
 
 I used [Github-flavoured Markdown](https://docs.github.com/en/get-started/writing-on-github)
 to write documents in this repository due to the simplicity to render visual
@@ -17,13 +19,19 @@ guides, such as notes and warnings, without additional deployment overheads.
 
 ### 🛠️ Windows 11 Maintenance
 
+Collection of tech tips for Windows power users and
+[SOHO](https://www.investopedia.com/terms/s/small-office-home-office-soho.asp)
+system administrators.
+
 - [Create local account via PowerShell](windows/local-windows-admin.md)
 - [Update PowerShell](windows/update-powershell.md)
 
-### Tech Tricks for Developers
+### 💻 Developer Necessities
 
-- [Create GUID via PowerShell](windows/create-guid.md)
-- [Set up WSL on Windows 11](developer/setup-wsl.md)
+Collection of tech tips by developers for developers.
+
+- [Create GUID in PowerShell](windows/create-guid.md)
+- [WSL on Windows 11](developer/setup-wsl.md)
 
 ---
 

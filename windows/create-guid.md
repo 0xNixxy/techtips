@@ -1,4 +1,4 @@
-# Create GUID via PowerShell
+# Create GUID in PowerShell
 
 PowerShell 5.1 comes pre-packaged with a nifty cmdlet to generate new Globally
 Unique Identifier (GUIDs) for you.
@@ -21,3 +21,8 @@ Alternatively, you can also generate a new GUID in Registry format using
 ```powershell
 '{'+[guid]::NewGuid().ToString()+'}'
 ```
+
+## Back to Main Page
+
+> [!NOTE]
+> This tech tip is part of [0xNixxy Tech Tips](../README.md) series.

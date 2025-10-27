@@ -128,3 +128,8 @@ Windows 11 system,
    ```Powershell
    Remove-LocalUser -SID $User.SID
    ```
+
+## Back to Main Page
+
+> [!NOTE]
+> This tech tip is part of [0xNixxy Tech Tips](../README.md) series.

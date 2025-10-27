@@ -13,3 +13,8 @@ install the latest version of help files.
 ```powershell
 Update-Help -Verbose -Force -ErrorAction SilentlyContinue
 ```
+
+## Back to Main Page
+
+> [!NOTE]
+> This tech tip is part of [0xNixxy Tech Tips](../README.md) series.
