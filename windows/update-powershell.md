@@ -1,4 +1,4 @@
-# Update PowerShell
+# Update PowerShell 5.1
 
 PowerShell 5.1 unfortunately does not come pre-packaged with the full set of
 features in Windows 11. As such, you may need to update the various aspects

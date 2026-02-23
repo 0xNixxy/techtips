@@ -26,6 +26,12 @@ system administrators.
 - [Create local account via PowerShell](windows/local-windows-admin.md)
 - [Update PowerShell](windows/update-powershell.md)
 
+### Windows 11 Security
+
+Collection of tech tips to enhance Windows security with ease.
+
+- [Enable Windows DNS client to use DNS-over-HTTPS](windows/enable-windows-doh.md)
+
 ### 💻 Developer Necessities
 
 Collection of tech tips by developers for developers.
