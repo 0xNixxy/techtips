@@ -30,4 +30,5 @@ Collection of tech tips to enhance Windows security with ease.
 Collection of tech tips by developers for developers.
 
 - [Create GUID in PowerShell](windows/create-guid.md)
+- [Python Quickstart Guide](developer/python-guide.md)
 - [WSL on Windows 11](developer/setup-wsl.md)

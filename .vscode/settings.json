@@ -1,6 +1,7 @@
 {
-  // Spell checker list of words to exclude
+  // Spell checker list of words to include in dictionary
   "cSpell.words": [
-    "0xNixxy"
+    "0xNixxy",
+    "standalone"
   ]
 }
