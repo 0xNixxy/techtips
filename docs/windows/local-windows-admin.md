@@ -130,8 +130,6 @@ Windows 11 system,
    Remove-LocalUser -SID $User.SID
    ```
 
-## Back to Main Page
+---
 
-> ℹ️ Note
->
-> This tech tip is part of [0xNixxy Tech Tips](../index.md) series.
+← [Back to Main Page](../index.md)

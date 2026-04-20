@@ -99,8 +99,6 @@ below to do this.
    Add-DnsClientDohServerAddress 2606:4700:4700::1003 https://family.cloudflare-dns.com/dns-query -AutoUpgrade $True
    ```
 
-## Back to Main Page
+---
 
-> ℹ️ Note
->
-> This tech tip is part of [0xNixxy Tech Tips](../index.md) series.
+← [Back to Main Page](../index.md)

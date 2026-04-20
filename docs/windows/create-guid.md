@@ -23,8 +23,6 @@ Alternatively, you can also generate a new GUID in Registry format using
 '{'+[guid]::NewGuid().ToString()+'}'
 ```
 
-## Back to Main Page
+---
 
-> ℹ️ Note
->
-> This tech tip is part of [0xNixxy Tech Tips](../index.md) series.
+← [Back to Main Page](../index.md)

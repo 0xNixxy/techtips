@@ -14,8 +14,6 @@ install the latest version of help files.
 Update-Help -Verbose -Force -ErrorAction SilentlyContinue
 ```
 
-## Back to Main Page
+---
 
-> ℹ️ Note
->
-> This tech tip is part of [0xNixxy Tech Tips](../index.md) series.
+← [Back to Main Page](../index.md)
