@@ -146,7 +146,7 @@ Python scripts in the following ways
 > For more information on working on projects with `uv`, read the [official
 > documentation](https://docs.astral.sh/uv/guides/projects/).
 
-## Lint your Python project with `ruff`.
+## Lint your Python project with `ruff`
 
 To use a linter to check your Python source code in a project, follow the steps
 below
@@ -183,11 +183,11 @@ The following table summarises the list of old tools and the superseding new
 tools.
 
 | Old Tool | Purpose | Equivalent New Tool |
-|----------|---------|-----------------------|
+| -------- | ------- | ------------------- |
 | `pyenv` | Version manager for Python | `uv python install` |
 | `pip` | Install packages | `uv add` |
 | `python -m venv` | Create virtual environments | `uv` |
-| `pipenv` | Package + env management | `uv`|
+| `pipenv` | Package + env management | `uv` |
 | `poetry` | Dependency management | `uv` |
 | `requirements.txt` | List dependencies used by `pip` | `uv` uses `pyproject.toml` |
 | `flake8` / `pylint` | Linting | `ruff check` |
