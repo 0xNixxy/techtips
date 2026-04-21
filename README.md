@@ -1,7 +1,7 @@
 # md-webpage-template
 
 Markdown template that uses Unicode admonitions for Note (ℹ️), Tip (💡),
-Important (‼️) and Warning/Caution (⚠️). No plugins needed. Just edit and
+Important (‼️) and Warning/Caution (⚠️). No complex setup. Just edit and
 publish on GitHub Pages.
 
 ## Why I created this template
@@ -16,18 +16,18 @@ natively on the GitHub website. They look great, they are readable, and they
 just work.
 
 However, GitHub Pages does not support these GFM admonitions out of the box. To
-get GFM admonitions working in GitHub Pages, you would normally need plugins.
-That means setup overhead, configuration files, and a lot of extra fuss for what
-should be a simple documentation site.
+get GFM admonitions working in GitHub Pages, you need to use custom plugins with
+custom GitHub Actions. That means setup overhead, configuration files, and a lot
+of extra fuss for what should be a simple documentation site.
 
-That frustration led me to a different approach. Instead of fighting with
-plugins and build environments, I turned to Unicode characters. Browsers support
+That frustration led me to a different approach. Instead of fighting with custom
+plugins and build pipeline, I turned to Unicode characters. Browsers support
 them universally, and with a bit of styling, they can serve as clean, visual
 admonitions. No extra tooling required.
 
 So, I built this template. It is for anyone who wants a fuss-free way to deploy
-Markdown articles as webpages on GitHub Pages. No plugins, no complexity. Just
-write your Markdown, push it, and let the GitHub Pages do the rest.
+Markdown articles as webpages on GitHub Pages. Just write your Markdown, git
+push it, and let the GitHub Pages default build pipeline do the rest.
 
 ## How the Unicode admonitions will look like
 
@@ -127,5 +127,4 @@ Follow these steps to get your Markdown website up and running on GitHub Pages
    Wait a minute or two for GitHub Pages to build your site. Then visit your
    published URL to see your Markdown files rendered as a clean website.
 
-1. Congratulations. You have deployed your website. No plugins, no configuration
-   files, no build steps. Just Markdown and Unicode.
+1. Congratulations. You have deployed your website.

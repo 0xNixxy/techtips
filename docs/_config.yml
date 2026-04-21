@@ -1,2 +1,8 @@
-# Use a supported out of the box Jekyll theme that uses dark mode
-theme: jekyll-theme-minimal
+# Use Jekyll theme Minimal in dark mode
+remote_theme: jekyll/minimal
+
+plugins:
+  - jekyll-remote-theme
+
+minima:
+  skin: dark
