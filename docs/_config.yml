@@ -1,5 +1,5 @@
 # Use Jekyll theme Minima in dark mode
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@4de3223
 
 plugins:
   - jekyll-remote-theme
