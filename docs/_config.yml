@@ -1,2 +1,10 @@
-# Use a supported out of the box Jekyll theme that uses dark mode
-theme: jekyll-theme-hacker
+# Use Jekyll theme Minima in dark mode
+remote_theme: jekyll/minima@4de3223
+
+plugins:
+  - jekyll-remote-theme
+
+minima:
+  skin: dark
+
+  hide_site_feed_link: true

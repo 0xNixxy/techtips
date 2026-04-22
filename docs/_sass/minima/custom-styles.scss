@@ -1,0 +1,9 @@
+/*
+ *  Overwrite default Minima CSS styles.
+ *  Refer to https://github.com/jekyll/minima
+ */
+
+/* Set blockquotes to normal, because italics skews the Unicode icons */
+blockquote {
+    font-style: normal;
+}
