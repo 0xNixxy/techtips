@@ -1,0 +1,19 @@
+# Front Matter global settings
+# ----------------------------
+
+# Default title
+title: "Markdown Website Template for GitHub Pages"
+
+# Default description
+description: "Built with Primer Dark for Jekyll"
+
+
+# Build settings
+# --------------
+
+# Use Primer Dark theme tagged to commit hash
+remote_theme: 0xNixxy/primer-dark@355a492
+
+# Plugins required for Primer Dark
+plugins:
+  - jekyll-remote-theme
