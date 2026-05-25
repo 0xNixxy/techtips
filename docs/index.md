@@ -1,53 +1,34 @@
-# Introduction
+# Welcome to 0xNixxy Tech Tips
 
-Welcome to my Markdown reference site. This template lets you host Markdown
-files as webpages on GitHub Pages with minimal setup.
-
-> ℹ️ Note
->
-> This site uses Unicode characters for admonitions. They work on every browser
-> with zero plugins.
+Welcome to my personal repository of technical tips, an opinionated collection
+of practical and time-saving solutions that I gathered over time. These notes
+serve as my go-to reference for topics on system maintenance, software
+development and cybersecurity. I hope that others facing similar technical
+topics will find this collection helpful.
 
 ---
 
-## Getting Started
+## Contents
 
-Check out the sample article below to see how internal linking works.
+### 🛠️ Windows 11 Maintenance
 
-- [Sample Article](sample-article.md)
+Collection of tech tips for Windows power users and
+[SOHO](https://www.investopedia.com/terms/s/small-office-home-office-soho.asp)
+system administrators.
 
-## Features
+- [Create local account via PowerShell](windows/local-windows-admin.md)
+- [Update PowerShell](windows/update-powershell.md)
 
-Just write your content in Markdown, push to GitHub, and the site updates
-automatically.
+### Windows 11 Security
 
-> 💡 Tip
->
-> You can organize your Markdown files into directories. The links will work as
-> long as the paths are correct.
+Collection of tech tips to enhance Windows security with ease.
 
-## Why Use This Template
+- [Enable Windows DNS client to use DNS-over-HTTPS](windows/enable-windows-doh.md)
 
-Use this template if you want a fuss-free way to share Markdown documentation as
-a live website.
+### 💻 Developer Necessities
 
-You can also use Unicode admonitions rendered below to enhance the documentation
-experience for the reader.
+Collection of tech tips by developers for developers.
 
-> ℹ️ Note
->
-> Highlights information that users should take
-> into account, even when skimming.
-
-> 💡 Tip
->
-> Optional information to help a user be more successful.
-
-> ‼️ Important
->
-> Crucial information necessary for users to succeed.
-
-> ⚠️ Warning
->
-> Critical content demanding immediate user attention
-> due to potential risks.
+- [Create GUID in PowerShell](windows/create-guid.md)
+- [Python Quickstart Guide](developer/python-guide.md)
+- [WSL on Windows 11](developer/setup-wsl.md)
