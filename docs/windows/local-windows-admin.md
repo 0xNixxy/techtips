@@ -54,7 +54,7 @@ Windows 11 system,
 1. Store your new account password as a PowerShell variable with the following
    command.
 
-   ```Powershell
+   ```powershell
    $Password = Read-Host -AsSecureString
    ```
 
@@ -64,7 +64,7 @@ Windows 11 system,
 1. Store your account username, user full name, and account description as
    variables for convenience.
 
-   ```Powershell
+   ```powershell
    $UserName = Read-Host
    $FullName = Read-Host
    $Description = Read-Host
@@ -72,14 +72,14 @@ Windows 11 system,
 
 1. Create a new local account with the following command.
 
-   ```Powershell
+   ```powershell
    New-LocalUser $UserName -Password $Password -FullName $FullName -Description $Description
    ```
 
 1. (Optional) If you are creating an administrator local account, add the newly
    created local account to the Administrators user group.
 
-   ```Powershell
+   ```powershell
    Add-LocalGroupMember -Group "Administrators" -Member $UserName
    ```
 
@@ -87,13 +87,13 @@ Windows 11 system,
    Password expiry is enabled when ``PasswordExpires = True`` for the account
    name.
 
-   ```Powershell
+   ```powershell
    Get-CimInstance -ClassName Win32_UserAccount | Format-Table -Property Name, Disabled, PasswordExpires
    ```
 
 1. If the local account has password expiry enabled, disable password expiry.
 
-   ```Powershell
+   ```powershell
    Set-LocalUser -Name $UserName -PasswordNeverExpires $true
    ```
 
@@ -106,27 +106,27 @@ Windows 11 system,
 1. Take note of the account username of the Windows User Account to be deleted
    in the first column (Name) of the following command.
 
-   ```Powershell
+   ```powershell
    Get-LocalUser
    ```
 
    Get the user object of the target account username. Replace ``<user name>``
    with the target account username.
 
-   ```Powershell
+   ```powershell
    $User = Get-LocalUser -Name "<user name>" -ErrorAction Stop
    ```
 
 1. Remove the associated Windows User Profile (from both filesystem and
    registry).
 
-   ```Powershell
+   ```powershell
    Get-CimInstance -Class Win32_UserProfile | ? SID -eq $User.SID | Remove-CimInstance
    ```
 
 1. Remove the Windows User Account.
 
-   ```Powershell
+   ```powershell
    Remove-LocalUser -SID $User.SID
    ```
 

@@ -27,7 +27,7 @@ Cloudflare.
 
 1. Copy and paste the following command to enable DoH for Google public DNS.
 
-   ```PowerShell
+   ```powershell
    Set-DnsClientDohServerAddress -ServerAddress '8.8.8.8' -AutoUpgrade $True;
    Set-DnsClientDohServerAddress -ServerAddress '2001:4860:4860::8888' -AutoUpgrade $True;
    Set-DnsClientDohServerAddress -ServerAddress 8.8.4.4 -AutoUpgrade $True;
@@ -36,7 +36,7 @@ Cloudflare.
 
 1. Copy and paste the following command to enable DoH for Cloudflare public DNS.
 
-   ```PowerShell
+   ```powershell
    Set-DnsClientDohServerAddress -ServerAddress '1.1.1.1' -AutoUpgrade $True;
    Set-DnsClientDohServerAddress -ServerAddress '2606:4700:4700::1111' -AutoUpgrade $True;
    Set-DnsClientDohServerAddress -ServerAddress 1.0.0.1 -AutoUpgrade $True;
@@ -46,13 +46,13 @@ Cloudflare.
 1. Verify that the Windows entries for the Google and Cloudflare public DNS
    servers have the `AutoUpgrade` column set to `True`.
 
-   ```PowerShell
+   ```powershell
    Get-DnsClientDohServerAddress
    ```
 
    You should see an output similar to that below.
 
-   ```Text
+   ```text
    ServerAddress        AllowFallbackToUdp AutoUpgrade DohTemplate
    -------------        ------------------ ----------- -----------
    149.112.112.112      False              False       https://dns.quad9.net/dns-query
@@ -82,7 +82,7 @@ below to do this.
 
 1. Add "block malware" series of Cloudflare for Families public DNS.
 
-   ```PowerShell
+   ```powershell
    Add-DnsClientDohServerAddress 1.1.1.2 https://security.cloudflare-dns.com/dns-query -AutoUpgrade $True;
    Add-DnsClientDohServerAddress 1.0.0.2 https://security.cloudflare-dns.com/dns-query -AutoUpgrade $True;
    Add-DnsClientDohServerAddress 2606:4700:4700::1112 https://security.cloudflare-dns.com/dns-query -AutoUpgrade $True;
@@ -92,7 +92,7 @@ below to do this.
 1. Add "block malware & adult content" series of Cloudflare for Families public
    DNS.
 
-   ```PowerShell
+   ```powershell
    Add-DnsClientDohServerAddress 1.1.1.3 https://family.cloudflare-dns.com/dns-query -AutoUpgrade $True;
    Add-DnsClientDohServerAddress 1.0.0.3 https://family.cloudflare-dns.com/dns-query -AutoUpgrade $True;
    Add-DnsClientDohServerAddress 2606:4700:4700::1113 https://family.cloudflare-dns.com/dns-query -AutoUpgrade $True;
