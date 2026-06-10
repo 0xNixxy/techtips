@@ -1,42 +1,57 @@
 # Python Quickstart Guide
 
-Python is one of the easiest scripting languages to learn, but also one of the
-easiest to overcomplicate when it comes to setup. This quickstart is designed
-for both first-time learners and experienced developers who just need a
-fuss-free way to get Python set up to start coding.
+Python is one of the easiest scripting languages to learn. However, setting up a
+proper development environment for Python can be confusing due to the long
+history of fragmented tools, virtual environments, and legacy packaging systems.
+This quickstart is designed for both first-time learners and experienced
+developers who just need a fuss-free way to set up Python to start coding.
 
 This opinionated guide focuses on a mainstream Python workflow on Linux, which
 includes tools, commands, and conventions widely recommended in 2026, while
-briefly covering older approaches you can safely skip over.
+briefly covering older approaches that you can safely skip over.
 
 ## Useful Background Knowledge
 
-1. Use **Python 3** for your new projects. Python 2 is obsolete and deprecated
-   since 2020. The latest Python versions can be found on the [official Python
-   website](https://devguide.python.org/versions/).
+1. Use **Python 3** for your new projects.
 
-1. Linux is technically easier to setup Python as Python often comes
-   pre-installed with Linux. For Ubuntu 24.04, use the following commands to
-   setup Python3
+   - Python 2 is obsolete and deprecated since 2020.
 
-   ```bash
-   sudo apt update
-   sudo apt install python3 python-is-python3
-   ```
+   - Use the newest stable version of Python that has a reasonable End-of-Life
+      (EOL) timeline for your use case. Refer to the [status of Python
+      versions](https://devguide.python.org/versions/) on EOL information.
 
-   > ℹ️ Note
-   >
-   > Download the installer from the [official Python
-   > website](https://www.python.org/downloads/windows/) to install Python on
-   > Windows.
+1. As Python often comes pre-installed with Linux, Linux is generally easier
+   (than Windows) to setup Python.
 
-1. Use `uv` tool to install and manage specific versions of Python.
+   - For Ubuntu 24.04, use the following commands to setup Python3
 
-1. Use `ruff` tool for linting and formatting of Python source code. Linters
-   help you catch mistakes early in your source code and help build good coding
-   habits automatically in developers.
+      ```bash
+      sudo apt update
+      sudo apt install python3 python-is-python3
+      ```
+
+      > 💡 Tip
+      >
+      > Installing Python, as described above, limits you to the "latest"
+      > version supported by the system, which may not be updated to the latest
+      > version of Python. Developers generally prefer to use the `uv` version
+      > management tool, which allows them to deploy specific Python versions
+      > for each project. If you are starting on Python, I recommend using
+      > the `uv` tool to set up Python.
+
+   - For Windows, download the installer from the [official Python
+      website](https://www.python.org/downloads/windows/) to install Python.
+
+1. The `uv` version management tool comes with a `ruff` linting and formatting
+   tool for Python source code. Linters help you catch mistakes early in your
+   source code and help build good coding habits in developers. Using a common
+   formatting tool simplifies source code readability and maintenance among
+   developers working on the same project.
 
 ## Set up specific Python versions with `uv`
+
+The instruction below guides you on how to install Python using `uv` on
+Ubuntu 24.04:
 
 1. [Optional prerequisites] Ensure that your system has the following tools
    installed to proceed with the subsequent steps.
@@ -45,7 +60,7 @@ briefly covering older approaches you can safely skip over.
    sudo apt install curl
    ```
 
-1. Install latest version of `uv` using the [official standalone
+1. Install latest version of `uv` using the [official stand-alone
    installer](https://docs.astral.sh/uv/getting-started/installation/).
 
    ```bash
@@ -76,13 +91,13 @@ briefly covering older approaches you can safely skip over.
 1. Install a specific version of Python.
 
    ```bash
-   uv python install 3.11
+   uv python install 3.13
    ```
 
    > 💡 Tip
    >
    > To upgrade a specific Python version to the latest patch release, use
-   > `uv python upgrade 3.11`.
+   > `uv python upgrade 3.13`.
 
 1. Check that Python was installed properly.
 
@@ -95,13 +110,13 @@ briefly covering older approaches you can safely skip over.
    ```bash
    mkdir hello-world
    cd hello-world
-   uv python pin 3.11
+   uv python pin 3.13
    ```
 
    > 💡 Tip
    >
    > To set a global default version of Python in your user account, use
-   > `uv python pin --global 3.11`.
+   > `uv python pin --global 3.13`.
 
 1. Check the version of Python executed by `uv` in the project.
 
@@ -171,7 +186,7 @@ below
 
 ## Gradual deprecation of older Python tools
 
-Python developers are rapidly consolidating around a new generation of tools,
+Python developers are rapidly consolidating around the new generation of tools,
 such as `uv` and `ruff`, which are designed to replace the older fragmented
 toolchain. However, many active Python projects have yet to migrate to the new
 toolchains and will likely take a few years for the entire Python ecosystem to
